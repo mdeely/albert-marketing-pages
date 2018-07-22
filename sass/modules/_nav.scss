@@ -1,0 +1,26 @@
+$nav-height: rem(80);
+$nav-padding: rem(20);
+
+.mainNav {
+	background-color: $nav-background-color;
+	color: #FFFFFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: $nav-height;
+
+	& + .content {
+		padding-top: $nav-height;
+	}
+
+	header {
+
+		nav {
+			ul {
+				display: flex;
+			}
+		}
+	}
+}
