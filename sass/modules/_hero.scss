@@ -1,0 +1,44 @@
+.heroComponent {
+	height: 100vh;
+	width: 100%;
+
+	.heroComponent__info-container {
+		padding: rem(40);
+		align-self: center;
+
+		* {
+			margin-bottom: rem(20);
+			line-height: initial;
+		}
+
+		.heroComponent__supertitle {
+
+		}
+
+		.heroComponent__title {
+			
+		}
+
+		.heroComponent__description {
+			
+		}
+
+		.heroComponent__cta {
+			margin-top: rem(30);
+			margin-bottom: 0;
+		}
+
+	}
+
+	.heroComponent__visual {
+		padding: rem(40);
+		align-self: center;
+		height: 100vh;
+
+			img {
+				height: 100%;
+				position: relative;
+				left:-100px;
+			}
+	}
+}

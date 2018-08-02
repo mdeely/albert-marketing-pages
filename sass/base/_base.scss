@@ -4,5 +4,61 @@ html {
 
 html,
 body {
-	font-size: 16px;
+	font-size: 18px;
+	color: $abbey-grey;
+
+	@media only screen and (min-width: $xxl-viewport) {
+		font-size: 20px;
+	}
 }
+
+body {
+	overflow-x: hidden;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	color: $linkBlue;
+	text-decoration: none;
+}
+
+p {
+	@include base-text-styles();
+	line-height: em(23);
+	margin-bottom: em(30);
+}
+
+h1 {
+	@include x-large-title;
+}
+
+h2 {
+	@include large-title;
+}
+
+h3 {
+	@include medium-title;
+}
+
+h4 {
+	@include small-title;
+}
+
+h5 {
+	@include x-small-title;
+}
+
+h6 {
+	@include label-title;
+}
+
+hr {
+	margin-top: em(40);
+	border: 0px solid transparent;
+	border-bottom: em(1) solid $menuBorder;
+	max-width: 100%;
+}
+
