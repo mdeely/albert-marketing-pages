@@ -12,6 +12,7 @@ $havelock-blue: #63ADE1;
 $danube-blue: #4F94C9;
 $steel-blue: #4080BD;
 $picton-blue: #399FDF;
+$st-tropaz: #2B6296;
 
 //// greys
 $nevada-grey: #626668;
@@ -21,6 +22,28 @@ $abbey-grey: #4F5355;
 //// light greys
 $regent-grey: #979DA1;
 $wild-sand-grey: #F4F4F4;
+
+
+///////////////////////
+// Color assignments //
+///////////////////////
+$secondary_blue: $steel-blue;
+$linkBlue: $picton-blue;
+$primaryGreen: $mountain-meadow-green;
+$nav-background-color: $havelock-blue;
+
+//// general
+$bgGrey: #FAFAFA;
+$menuBorder: #E1E4E6;
+$bgGrey--darker: #F4F4F4;
+
+// text
+$text_black: #4F5355;
+$text-black--lighter_step_1: #666B6E;
+$text-black--lighter_step_2: #797E81;
+$text-black--lighter_step_3: #7A7E81;
+$text_grey: #7F8487;
+$text_light_grey: #A7ADB0;
 
 //// courses
 $course-ela: #AB5FAB;
@@ -32,31 +55,24 @@ $course-science: #9284CE;
 $course-other: #A99988;
 
 
+
 ///////////////////////
-// Color assignments //
+////// Selectors //////
 ///////////////////////
-$secondary_blue: $danube-blue;
-$nav-background-color: $havelock-blue;
-$linkBlue: $picton-blue;
-
-//// general
-$bgGrey: #FAFAFA;
-$menuBorder: #E1E4E6;
-$bgGrey--darker: #F4F4F4;
-
-
-// Text
-$text_black: #4F5355;
-$text-black--lighter_step_1: #666B6E;
-$text-black--lighter_step_2: #797E81;
-$text-black--lighter_step_3: #7A7E81;
-$text_grey: #7F8487;
-$text_light_grey: #A7ADB0;
 
 ///// buttons
 $button: '.button, button';
 
-// Shadows
+///// type
+$allRoundGothic-modifier: '.fancy-type';
+
+
+
+////////////////////////////
+//// Effects properties ////
+////////////////////////////
+
+// shadows
 $shadow_depth_1: 0 1px 1px  rgba(0,0,0,.25);
 $shadow_depth_2: 0 1px 3px  rgba(0,0,0,.2 );
 $shadow_depth_3: 0 1px 5px  rgba(0,0,0,.18);
@@ -64,7 +80,11 @@ $shadow_depth_4: 0 2px 10px rgba(0,0,0,.12);
 $shadow_depth_5: 0 2px 20px rgba(0,0,0,.2 );
 
 
-// Media query values
+
+
+///////////////////////
+//// Media queries ////
+///////////////////////
 $xxl-viewport: 1800px;
 $xl-viewport: 1400px;
 $l-viewport: 1200px;

@@ -43,10 +43,18 @@
 	line-height: rem(28);
 }
 
+@mixin make-fancy {
+	font-family: 'All Round Gothic';
+}
+
 @mixin x-large-title() {
 	@include base-text-styles();
 	font-size: rem(52);
 	color: $secondary_blue;
+
+	@media only screen and (max-width: $s-viewport) {
+		font-size: rem(38);
+	}
 }
 
 @mixin large-title() {
@@ -72,13 +80,17 @@
 
 @mixin label-title() {
 	@include base-text-styles();
+	@include make-fancy();
 	color: $text-black--lighter_step_1;
 	font-weight: 600;
 	line-height: em(64);
 	font-size: em(20);
 	text-transform: uppercase;
 	letter-spacing: .65px;
-	font-family: 'All Round Gothic';
+
+	@media only screen and (max-width: $s-viewport) {
+		font-size: rem(16);
+	}
 }
 
 @mixin paragraph-small() {
@@ -88,4 +100,14 @@
 
 @mixin paragraph-large() {
 	font-size: em(4);
+}
+
+
+// Spacing
+@mixin large-padding() {
+	padding: rem(80);
+
+	@media only screen and (max-width: $s-viewport) {
+		padding: rem(40);
+	}
 }

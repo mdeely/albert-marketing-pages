@@ -23,3 +23,8 @@
 	@include paragraph-small();
 	padding: em(5) em(10);
 }
+
+.button--white {
+	@include button();
+	@include button-color(white, $linkBlue);
+}

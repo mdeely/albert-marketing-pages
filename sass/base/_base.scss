@@ -4,12 +4,8 @@ html {
 
 html,
 body {
-	font-size: 18px;
+	font-size: 100%;
 	color: $abbey-grey;
-
-	@media only screen and (min-width: $xxl-viewport) {
-		font-size: 20px;
-	}
 }
 
 body {
@@ -27,6 +23,7 @@ a {
 
 p {
 	@include base-text-styles();
+	font-weight: 200;
 	line-height: em(23);
 	margin-bottom: em(30);
 }

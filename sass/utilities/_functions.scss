@@ -1,7 +1,7 @@
 @function em($pixels) {
-  @return #{$pixels/$base-font-size}em
+  @return ($pixels / $base-font-size) * 1em;
 }
 
 @function rem($pixels) {
-  @return #{$pixels/$base-font-size}rem
+  @return ($pixels / $base-font-size) * 1rem;
 }
